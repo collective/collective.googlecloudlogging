@@ -64,6 +64,5 @@ setup(
     [z3c.autoinclude.plugin]
     target = plone
     [console_scripts]
-    update_locale = collective.googlecloudlogging.locales.update:update_locale
     """,
 )
