@@ -31,33 +31,32 @@
 collective.googlecloudlogging
 =============================
 
-Tell me what your product does
+Google Cloud Logging Integration
 
-Features
---------
+Description
+-----------
 
-- Can be bullet points
+This library includes logging handlers to connect Python's standard logging module to Logging, as well as an API client library to access Cloud Logging manually.
 
 
-Examples
---------
+Configuration
+-------------
 
-This add-on can be seen in action at the following sites:
-- Is there a page on the internet where everybody can see the features?
+- Within Google Cloud no extra configuration should be needed.
+- Todo: To use the Cloud Logging library for Python outside of Google Cloud, including running the library on your own workstation, on your data center's computers, or on the VM instances of another cloud provider, you must supply your Google Cloud project ID and appropriate service account credentials directly to the Cloud Logging library for Python.
 
 
 Documentation
 -------------
 
-Full documentation for end users can be found in the "docs" folder, and is also available online at http://docs.plone.org/foo/bar
+More information at https://cloud.google.com/logging/docs/setup/python#connecting_the_library_to_python_logging
 
 
-Translations
+Requirements
 ------------
 
-This product has been translated into
-
-- Klingon (thanks, K'Plai)
+* Plone 5.2
+* Python 3.7
 
 
 Installation
@@ -76,18 +75,12 @@ Install collective.googlecloudlogging by adding it to your buildout::
 and then running ``bin/buildout``
 
 
-Authors
--------
+Maintainers
+-----------
 
-Provided by awesome people ;)
+- Peter Holzer
 
-
-Contributors
-------------
-
-Put your name here, you deserve it!
-
-- ?
+Contact: `dev@bluedynamics.com <mailto:dev@bluedynamics.com>`_
 
 
 Contribute
@@ -95,14 +88,6 @@ Contribute
 
 - Issue Tracker: https://github.com/collective/collective.googlecloudlogging/issues
 - Source Code: https://github.com/collective/collective.googlecloudlogging
-- Documentation: https://docs.plone.org/foo/bar
-
-
-Support
--------
-
-If you are having issues, please let us know.
-We have a mailing list located at: project@example.com
 
 
 License
