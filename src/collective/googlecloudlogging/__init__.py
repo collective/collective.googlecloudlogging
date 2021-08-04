@@ -1,6 +1,22 @@
 # -*- coding: utf-8 -*-
-# Imports the Cloud Logging client library
 import google.cloud.logging
+import logging
+
+
+def remove_root_logger_stdout():
+    """Remove StreamHandler from root logger.
+
+    An alternative way to do this is to edit zope.ini (wsgi config)
+    and remove the handler there.
+    """
+    logger = logging.getLogger()
+    for handler in logger.handlers:
+        if isinstance(handler, logging.StreamHandler):
+            logger.removeHandler(handler)
+
+
+# After this code runs, logger will not stream to stdout
+remove_root_logger_stdout()
 
 # Instantiates a client
 client = google.cloud.logging.Client()
