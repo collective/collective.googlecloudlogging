@@ -2,7 +2,7 @@
 collective.googlecloudlogging
 =============================
 
-This library connects to Python's standard logging module will log to Googles Cloud Logging via API. More information at https://cloud.google.com/logging/docs/setup/python#connecting_the_library_to_python_logging
+This library connects to Python's standard logging module and will log to Googles Cloud Logging via API. More information at https://cloud.google.com/logging/docs/setup/python#connecting_the_library_to_python_logging
 
 Configuration
 -------------
