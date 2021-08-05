@@ -12,6 +12,7 @@ def remove_root_logger_stdout():
     logger = logging.getLogger()
     for handler in logger.handlers:
         if isinstance(handler, logging.StreamHandler):
+            logger.info(f"Removing StreamHandler from root logger - turning OFF logging to stdout")
             logger.removeHandler(handler)
 
 
