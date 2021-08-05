@@ -37,8 +37,14 @@ Description
 -----------
 
 This library connects to Python's standard logging module will log to Googles Cloud Logging via API.
-As soon as it's loaded, it will remove the StreamHandler from root logger and no longer write to stdout.
+Note: As soon as it's loaded, and only then, it will remove the StreamHandler from root logger and no longer write to stdout.
+If you want no stdout at all in your Google Cloud Logs, you have to disable it in your `wsgi.ini`
 
+```
+[logger_root]
+level = INFO
+handlers = console, eventlog
+```
 
 Configuration
 -------------
