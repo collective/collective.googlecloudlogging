@@ -1,4 +1,5 @@
 Contributors
 ============
 
-- Peter Holzer, peter.holzer@agitator.com
+- Peter Holzer
+- Erico Andrei

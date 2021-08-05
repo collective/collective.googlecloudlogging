@@ -36,14 +36,15 @@ Google Cloud Logging Integration
 Description
 -----------
 
-This library includes logging handlers to connect Python's standard logging module to Logging, as well as an API client library to access Cloud Logging manually.
+This library connects to Python's standard logging module will log to Googles Cloud Logging via API.
+As soon as it's loaded, it will remove the StreamHandler from root logger and no longer write to stdout.
 
 
 Configuration
 -------------
 
 - Within Google Cloud no extra configuration should be needed.
-- Todo: To use the Cloud Logging library for Python outside of Google Cloud, including running the library on your own workstation, on your data center's computers, or on the VM instances of another cloud provider, you must supply your Google Cloud project ID and appropriate service account credentials directly to the Cloud Logging library for Python.
+- If you want to use the Cloud Logging outside of Google Cloud, you have to supply your Google Cloud project ID and appropriate service account credentials.
 
 
 Documentation
