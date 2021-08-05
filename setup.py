@@ -12,7 +12,7 @@ long_description = '\n\n'.join([
 
 setup(
     name='collective.googlecloudlogging',
-    version='1.0a1',
+    version='1.0',
     description="Google Cloud Logging Integration",
     long_description=long_description,
     # Get more from https://pypi.org/classifiers/
