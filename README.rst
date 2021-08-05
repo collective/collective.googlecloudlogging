@@ -13,7 +13,7 @@ Configuration
 Note
 ----
 
-Note: As soon as it's loaded, and only then, it will remove the StreamHandler from root logger and no longer write to stdout.
+As soon as it's loaded, and only then, it will remove the StreamHandler from root logger and no longer write to stdout.
 If you want no instance logging to stdout at all in your Google Cloud Logs, you have to disable it in your ``wsgi.ini``::
 
 
