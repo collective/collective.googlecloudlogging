@@ -45,6 +45,23 @@ Install collective.googlecloudlogging by adding it to your buildout::
 and then running ``bin/buildout``
 
 
+For Python 2.7.x
+----------------
+
+You can try with these version pinnings::
+
+    google_cloud_logging = 1.15.1
+    pyasn1_modules = 0.2.8
+    rsa = 4.5
+    googleapis_common_protos = 1.53.0
+    packaging = 21.0
+    protobuf = 3.17.3
+    grpcio = 1.39.0
+    google_auth = 1.34.0
+    google_api_core = 1.31.1
+    google_cloud_core = 1.7.2
+
+
 Maintainers
 -----------
 
